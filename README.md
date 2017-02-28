@@ -176,6 +176,7 @@ Table of Contents
 ---------------------------------------
 
 >   2.4.1 Database Breakdown
+---------------------------------
 
 >   There will be a Amazon Database; a service provided by Amazon. When creating
 >   an account with Amazone Web Server, I need to create a php file for the register 
@@ -225,6 +226,7 @@ Table of Contents
 >   (Developed by Tanav Sharma)
 
 >   2.4.2 Application Breakdown
+-----------------------------------
 
 >   The overall concept of the mobile app for the project is to control the four
 >   servo motors of the robotic arm and keep logs on the user’s actions. The first
@@ -249,7 +251,7 @@ Table of Contents
 >   (Developed by Hennok Tadesse)
 
 >   2.4.3 Hardware Breakdown
-
+-----------------------------------
 >   **ROBOTIC ARM**
 
 >   FIMP project aims to bring a simple Robot Arm well within the reach and budget
