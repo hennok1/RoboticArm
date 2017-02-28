@@ -188,13 +188,13 @@ Table of Contents
 >   logs with in a day and each log will be stored in its own table. The breakdown of the
 >   fields is stated below.
 
->   1.  *User Account*
+>   1.  **User Account**
 
 >       1.  This table is generated when the user registers
 
 >       2.  It holds the users first name, last name, username as well as the password.
 
-        When registering, if an username already exists on the database, it
+>       When registering, if an username already exists on the database, it
         will advise the user that “User already exists”. When logging in, if the user
         enters wrong credentials, it will advise the user “Wrong Credentials”
 
