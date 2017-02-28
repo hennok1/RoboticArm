@@ -173,6 +173,7 @@ Table of Contents
 -----------------
 
 2.4 Software Requirement Specifications
+---------------------------------------
 
 ### 2.4.1 Database Breakdown
 
