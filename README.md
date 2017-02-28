@@ -10,11 +10,11 @@ Declaration of Joint Authorship
 
 The F.I.M.P. robotic arm project consist of three group members (Hennok Tadesse,
 Tanav Sharma, and Alay Lad) and is a joint effort on the completion of the
-project. The work for the project has been divided equal among the group member.
-Alay Lad has worked on the hardware aspect of the project; which include working
-with the flex sensor, creating the PCB’s, and working with the servo motors for
+project. The work for the project has been divided equally among the group members.
+Alay Lad has worked on the hardware aspect of the project; which includes working
+with the flex sensors, creating the PCB’s, and working with the servo motors for
 the robotic arm. Hennok Tadesse has worked on the design and functionality of
-the mobile application. Tanav Sharma has worked on the in terms of setting it
+the mobile application. Tanav Sharma has worked on the database in terms of setting it
 up, connecting it with the app and maintaining it. Testing and maintenance for
 the hardware and software has been tested by all three members equally and all
 project updates and changes have been checked and approved by all members.
@@ -22,13 +22,13 @@ project updates and changes have been checked and approved by all members.
 Approved Proposal
 =================
 
-Submission Date, 2016
+September, 2016
 
-*Proposal for the development of Project Name*
+*Proposal for the development of FIMP*
 
 Prepared by Tanav, Alay, and Hennok  
 *Computer Engineering Technology Student*  
-Username.github.io
+github.com/hennok129/RoboticArm
 
 **Executive Summary**
 
@@ -56,17 +56,13 @@ CENG 355 Computer Systems Project as a member of a 2 or 3 student group.
 This project will solve many problems. Along with solving problems it will also
 be very innovative. It will help gamers with better precision, and interact with
 games. Scientists and engineers can use this arm, for experiments where they
-need to have certain amount of distance clearance from the test site. It can
-also withstand great amounts of temperature that the normal human hand or body
-won’t be able to bear. These arms can also be used in space, where the
-astronauts can use the arm from their space ship. Also the app will be saving
-information received from the arm, and provide logs, so the user can use it to
-make his/her reports and also use the information to make changes to better the
-app or hardware.
+need to have certain amount of distance clearance from the test site. The app 
+will be saving information received from the arm, and provide logs, 
+so the user can use it to make his/her reports and also use the information
+to make changes to better the app or hardware.
 
 Abstract
 ========
-
 The purpose of the fully innovated microprocessor (F.I.M.P.) project is to use
 and control robotic arm equipment from a safer environment to lower the risk of
 work place injuries. The technical report will go over the way the Fully
@@ -76,14 +72,13 @@ mobile app, and the robotic arm will all be explained in great detail. The four
 flex sensors will be attached to a glove that will control the robotic arm with
 pressure from the user’s fingers. The mobile app will also be used to control
 the robotic arm but with four sliding bars instead of a sensor. The mobile app
-will include features such as individual users that can login to an account and
-store previous usage of the application. The robotic arm will consist of acrylic
-parts and four micro servo motors that move each joint of the robotic arm. The
-robotic arm is then connected to a Raspberry Pi 3 that will be the middle point
-that will control the robotic arm whether its from the flex sensors or the
-mobile app. These three key components are the main focus of the technical
-report because it will go over the basic workings of the project and give users
-the full understanding of this project. Reading this technical
+will include features such as allowing the user to record logs. The robotic arm 
+will consist of acrylic parts and four micro servo motors that move each joint 
+of the robotic arm. The robotic arm is then connected to a Raspberry Pi 3 that 
+will be the middle point that will control the robotic arm whether its from the 
+flex sensors or the mobile app. These three key components are the main focus of
+the technical report because it will go over the basic workings of the project 
+and give users the full understanding of this project.
 
 Table of Contents
 =================
@@ -138,8 +133,10 @@ Table of Contents
 
 >   We have innovated technology to great measures and even till this day,
 >   inventors and innovators continue to improve our lives with technology.
->   Activities such as, aircraft engineer or a power line technician put their
->   lives at risk.
+>   Jobs such as an Aircraft Engineer or a Power line Technician put their lives 
+>   at risk, by working up-close dangerous moving parts and high amounts of voltage. 
+>   Due to these dangers, employees' are getting injured at the workplace. With the help
+>   of Robotic Arm, we aim to prevent these injuries from happening.
 
 1.2 The Why
 -----------
@@ -179,25 +176,25 @@ Table of Contents
 
 ### 2.4.1 Database Breakdown
 
-There will be a Firebase Database; a service provided by google. When creating
-an account with Google Firebase, a file with the name of “google-services.json”
-is downloaded and needs to be imported into the software that is being used to
-make the application for the project; in this case “Android Studio”. This file
-is in-charge of the backend process of the database. This database will be
-responsible for holding user account information, for example user credentials
-for the login/register function. This database may contain many tables under the
-user account as the user will able to create multiple logs with in a day and
-each log will be stored in its own table. The breakdown of the fields is stated
-below.
+There will be a Amazon Database; a service provided by Amazon. When creating
+an account with Amazone Web Server, I need to create a php file for the register 
+activity. I also need to create one file for the login activity. To connect the app
+to the database, I created a "init.php" file. This file is in charge for establishing 
+connection to the database. All of these files are in-charge of the backend process of
+the database. This database will be responsible for holding user account information,
+for example user credentials for the login/register function. This database will also
+contain many tables under the user account as the user will able to create multiple
+logs with in a day and each log will be stored in its own table. The breakdown of the
+fields is stated below.
 
 1.  **User Account**
 
     1.  This table is generated when the user registers
 
-    2.  It holds the users email address as well as the hash password entered
+    2.  It holds the users first name, last name, username as well as the password.
 
-        When registering, if an email address already exists on the database, it
-        will advise the user “User already exists”. When logging in, if the user
+        When registering, if an username already exists on the database, it
+        will advise the user that “User already exists”. When logging in, if the user
         enters wrong credentials, it will advise the user “Wrong Credentials”
 
 2.  **Logs**
@@ -209,7 +206,7 @@ below.
         the app, and is asked if they would like to start a log.
 
     3.  It creates the table with title of the current date and time on the
-        system and stores the motors x, y coordinates for each of the four
+        system and stores the motors start and end coordinates for each of the four
         motor.
 
     4.  User will able to create multiple logs with in a day.
