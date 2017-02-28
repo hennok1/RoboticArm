@@ -415,7 +415,7 @@ budget has increased slightly.
 
 ### Mechanical Assembly
 
-STEP 1
+**STEP 1**
 
 The MeArm should be fun to build and easy to control. We’ve spent a lot of time
 putting together instructions for building and controlling the MeArm. We advise
@@ -434,7 +434,7 @@ your MeArm will just be something cool to sit on your shelf.
 
  
 
-STEP 2
+**STEP 2**
 
 Click on link and follow the steps
 
@@ -443,11 +443,11 @@ MeArm](http://www.instructables.com/id/Pocket-Sized-Robot-Arm-meArm-V04/?ALLSTEP
 
  
 
-STEP 3
+**STEP 3**
 
-**Using A Flex sensor and Servo On The Raspberry Pi Using An MCP3008**
+*Using A Flex sensor and Servo On The Raspberry Pi Using An MCP3008*
 
-**MCP3008**
+*MCP3008*
 
 In order to measure the X and Y voltages I decided to use an MCP3008 10 bit
 Analogue to Digital Converter. These devices are cheap, easy to setup and allow
@@ -474,7 +474,7 @@ DGND GROUND
 
  
 
-**Breadboard Circuit**
+*Breadboard Circuit*
 
 Here is my test circuit
 
@@ -674,7 +674,7 @@ The MCP3008 is wired up just as it was in my previous post :
 
  
 
-STEP 4
+**STEP 4**
 
 Making PCB for Flex Sensor
 
@@ -688,7 +688,7 @@ Making PCB for Flex Sensor
 
  
 
-STEP 5
+**STEP 5**
 
 Adding Adafruit\_PWM\_Servo\_Driver to Raspberry Pi
 
