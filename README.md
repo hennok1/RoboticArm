@@ -224,62 +224,62 @@ Table of Contents
 
 >   (Developed by Tanav Sharma)
 
-### 2.4.2 Application Breakdown
+>       2.4.2 Application Breakdown
 
-The overall concept of the mobile app for the project is to control the four
-servo motors of the robotic arm and keep logs on the user’s actions. The first
-screen of the app will be the login screen which will require an email and
-password to create and login to an account. The accounts are used to hold
-individual logs of the user’s controller usage. When logged in, the user is
-presented with two option; controller and user logs.
+>       The overall concept of the mobile app for the project is to control the four
+>       servo motors of the robotic arm and keep logs on the user’s actions. The first
+>       screen of the app will be the login screen which will require an email and
+>       password to create and login to an account. The accounts are used to hold
+>       individual logs of the user’s controller usage. When logged in, the user is
+>       presented with two option; controller and user logs.
 
-The first option of the application is to control the motor with four sliders
-that will control the arms movements. When the application first begins, the
-sliders will be set to a default (centered) position. When exiting the
-application, the robotic arm will return to its default position after all
-created movements.
+>       The first option of the application is to control the motor with four sliders
+>       that will control the arms movements. When the application first begins, the
+>       sliders will be set to a default (centered) position. When exiting the
+>       application, the robotic arm will return to its default position after all
+>       created movements.
 
-During the controller screen, the application will have logs of the user’s usage
-and will be presented in the user log screen. The user logs will contain the log
-of all the users usage of the app based on the users in the database. In
-conclusion, the login screen, controller screen, and user logs are the three key
-features of the application. The key developer of this application will be
-Hennok Tadesse with some help from Tanav Sharma.
+>       During the controller screen, the application will have logs of the user’s usage
+>       and will be presented in the user log screen. The user logs will contain the log
+>       of all the users usage of the app based on the users in the database. In
+>       conclusion, the login screen, controller screen, and user logs are the three key
+>       features of the application. The key developer of this application will be
+>       Hennok Tadesse with some help from Tanav Sharma.
 
-(Developed by Hennok Tadesse)
+>       (Developed by Hennok Tadesse)
 
-### 2.4.3 Hardware Breakdown
+>       2.4.3 Hardware Breakdown
 
-**ROBOTIC ARM**
+>       **ROBOTIC ARM**
 
-FIMP project aims to bring a simple Robot Arm well within the reach and budget
-of the average educator, student, parent or child. The design brief we set out
-with was to build a full robot arm kit with standard low cost screws, low cost
-servo motors and using less than 300 x 200mm (\~A4) of acrylic
+>       FIMP project aims to bring a simple Robot Arm well within the reach and budget
+>       of the average educator, student, parent or child. The design brief we set out
+>       with was to build a full robot arm kit with standard low cost screws, low cost
+>       servo motors and using less than 300 x 200mm (\~A4) of acrylic
 
-**MCP3008**
+>       **MCP3008**
 
-In order to measure the X and Y voltages I decided to use an MCP3008 10 bit
-Analogue to Digital Converter. These devices are cheap, easy to setup and allow
-8 analogue inputs to be read by the Pi using its SPI interface.
+>       In order to measure the X and Y voltages I decided to use an MCP3008 10 bit
+>       Analogue to Digital Converter. These devices are cheap, easy to setup and allow
+>       8 analogue inputs to be read by the Pi using its SPI interface.
 
-**Adafruit 16-Channel PWM**
+>       **Adafruit 16-Channel PWM**
 
-The Raspberry Pi is a wonderful little computer, but one thing it isn't very
-good at is controlling DC Servo Motors - these motors need very specific and
-repetitive timing pulses to set the position. Instead of asking the Pi Linux
-kernel to send these signals, pop on this handy HAT! It adds the capability to
-control 16 Servos with perfect timing. It can also do PWM up to 1.6 KHz with 12
-bit precision, all completely free-running.
+>       The Raspberry Pi is a wonderful little computer, but one thing it isn't very
+>       good at is controlling DC Servo Motors - these motors need very specific and
+>       repetitive timing pulses to set the position. Instead of asking the Pi Linux
+>       kernel to send these signals, pop on this handy HAT! It adds the capability to
+>       control 16 Servos with perfect timing. It can also do PWM up to 1.6 KHz with 12
+>       bit precision, all completely free-running.
 
-**Flex Sensor 4.5**
+>       **Flex Sensor 4.5**
 
-A simple flex sensor 4.5" in length. As the sensor is flexed, the resistance
-across the sensor increases. Patented technology by Spectra Symbol - they claim
-these sensors were used in the original Nintendo Power Glove.
+>       A simple flex sensor 4.5" in length. As the sensor is flexed, the resistance
+>       across the sensor increases. Patented technology by Spectra Symbol - they claim
+>       these sensors were used in the original Nintendo Power Glove.
 
-The resistance of the flex sensor changes when the metal pads are on the outside
-of the bend.
+>       The resistance of the flex sensor changes when the metal pads are on the outside
+>       of the bend.
 
 Content
 =======
