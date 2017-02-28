@@ -470,7 +470,7 @@ CS GPIO8 (P1-24)
 
 DGND GROUND
 
-![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/servo.png)
+![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/mcp3008.png)
 
  
 
@@ -478,7 +478,7 @@ DGND GROUND
 
 Here is my test circuit
 
-[media/image3.png](media/image3.png)
+![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/layout.png)
 
  
 
@@ -678,11 +678,11 @@ STEP 4
 
 Making PCB for Flex Sensor
 
-[media/image4.png](media/image4.png)
+![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/pcb.PNG)
 
 [Download Schematic File](https://ladzone.github.io/blog/mcp30008.sch)
 
-[media/image5.png](media/image5.png)
+![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/PCBB.PNG)
 
 [Download Board File](https://ladzone.github.io/blog/mcp30008.sch)
 
@@ -692,9 +692,9 @@ STEP 5
 
 Adding Adafruit\_PWM\_Servo\_Driver to Raspberry Pi
 
-[media/image6.jpeg](media/image6.jpeg)
+![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/driver.jpg)
 
-[media/image7.jpeg](media/image7.jpeg)
+![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/driver1.jpg)
 
  
 
@@ -719,7 +719,7 @@ like :
 
 **Test 1**
 
-[media/image8.jpeg](media/image8.jpeg)
+![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/output.jpg)
 
  
 
