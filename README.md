@@ -789,9 +789,9 @@ the user when launching the app.
 
 ### 2.3.2 Application
 
-The overall concept of the mobile app for the project is to control the four
+The overall concept of the mobile application for the project is to control the four
 servo motors of the robotic arm and keep logs on the user’s actions. The first
-screen of the app will be the login screen which will require an email and
+screen of the application will be the login screen which will require an email and
 password to create and login to an account. The accounts are used to hold
 individual logs of the user’s controller usage. When logged in, the user is
 presented with two option; controller and user logs.
@@ -804,7 +804,7 @@ created movements.
 
 During the controller screen, the application will have logs of the user’s usage
 and will be presented in the user log screen. The user logs will contain the log
-of all the users usage of the app based on the users in the database. In
+of all the users usage of the application based on the users in the database. In
 conclusion, the login screen, controller screen, and user logs are the three key
 features of the application. The key developer of this application will be
 Hennok Tadesse with some help from Tanav Sharma.
