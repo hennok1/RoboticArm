@@ -175,7 +175,7 @@ Table of Contents
 2.4 Software Requirement Specifications
 ---------------------------------------
 
-### 2.4.1 Database Breakdown
+>   ### 2.4.1 Database Breakdown
 
 There will be a Amazon Database; a service provided by Amazon. When creating
 an account with Amazone Web Server, I need to create a php file for the register 
