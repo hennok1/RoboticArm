@@ -247,7 +247,7 @@ Hennok Tadesse with some help from Tanav Sharma.
 
 (Developed by Hennok Tadesse)
 
-2.4.3 Hardware Breakdown
+### 2.4.3 Hardware Breakdown
 
 **ROBOTIC ARM**
 
