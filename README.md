@@ -128,7 +128,7 @@ Table of Contents
 1. Introduction
 ===============
 
-1.1 Technical Problem
+>   1.1 Technical Problem
 ---------------------
 
 >   We have innovated technology to great measures and even till this day,
@@ -138,7 +138,7 @@ Table of Contents
 >   Due to these dangers, employees' are getting injured at the workplace. With the help
 >   of Robotic Arm, we aim to prevent these injuries from happening.
 
-1.2 The Why
+>   1.2 The Why
 -----------
 
 >   This project was undertaken because using a robotic arm that can be
@@ -146,7 +146,7 @@ Table of Contents
 >   allows the technicians to work from a safe distance. It also allows them to
 >   have similar precision as they would have had when they were actually there.
 
-1.3 Problems Encountered
+>   1.3 Problems Encountered
 ------------------------
 
 >   There were many problems we encountered while working on this project. Some
@@ -175,54 +175,54 @@ Table of Contents
 2.4 Software Requirement Specifications
 ---------------------------------------
 
->   ### 2.4.1 Database Breakdown
+>   2.4.1 Database Breakdown
 
-There will be a Amazon Database; a service provided by Amazon. When creating
-an account with Amazone Web Server, I need to create a php file for the register 
-activity. I also need to create one file for the login activity. To connect the app
-to the database, I created a "init.php" file. This file is in charge for establishing 
-connection to the database. All of these files are in-charge of the backend process of
-the database. This database will be responsible for holding user account information,
-for example user credentials for the login/register function. This database will also
-contain many tables under the user account as the user will able to create multiple
-logs with in a day and each log will be stored in its own table. The breakdown of the
-fields is stated below.
+>   There will be a Amazon Database; a service provided by Amazon. When creating
+>   an account with Amazone Web Server, I need to create a php file for the register 
+>   activity. I also need to create one file for the login activity. To connect the app
+>   to the database, I created a "init.php" file. This file is in charge for establishing 
+>   connection to the database. All of these files are in-charge of the backend process of
+>   the database. This database will be responsible for holding user account information,
+>   for example user credentials for the login/register function. This database will also
+>   contain many tables under the user account as the user will able to create multiple
+>   logs with in a day and each log will be stored in its own table. The breakdown of the
+>   fields is stated below.
 
-1.  **User Account**
+>   1.  *User Account*
 
-    1.  This table is generated when the user registers
+>       1.  This table is generated when the user registers
 
-    2.  It holds the users first name, last name, username as well as the password.
+>       2.  It holds the users first name, last name, username as well as the password.
 
         When registering, if an username already exists on the database, it
         will advise the user that “User already exists”. When logging in, if the user
         enters wrong credentials, it will advise the user “Wrong Credentials”
 
-2.  **Logs**
+>   2.  **Logs**
 
-    1.  This table is generated under the users account and is linked with user
+>       1.  This table is generated under the users account and is linked with user
         unique id.
 
-    2.  This table is generated when user launches the controller function in
+>       2.  This table is generated when user launches the controller function in
         the app, and is asked if they would like to start a log.
 
-    3.  It creates the table with title of the current date and time on the
+>       3.  It creates the table with title of the current date and time on the
         system and stores the motors start and end coordinates for each of the four
         motor.
 
-    4.  User will able to create multiple logs with in a day.
+>       4.  User will able to create multiple logs with in a day.
 
-The purpose of the database is mainly to allow the user to create a personal
-account, and to allow other users to access logs from other users. Creating a
-table with the date and time, under the user’s unique id, will inform others
-whose logs are being accessed from which date and time. The administrator may
-choose to restrict certain logs to certain user and/or departments.
+>   The purpose of the database is mainly to allow the user to create a personal
+>   account, and to allow other users to access logs from other users. Creating a
+>   table with the date and time, under the user’s unique id, will inform others
+>   whose logs are being accessed from which date and time. The administrator may
+>   choose to restrict certain logs to certain user and/or departments.
 
-These logs can be used for research/development reasons only, which is stated in
-the Terms and Condition document provided with the product and also displayed to
-the user when launching the app.
+>   These logs can be used for research/development reasons only, which is stated in
+>   the Terms and Condition document provided with the product and also displayed to
+>   the user when launching the app.
 
-(Developed by Tanav Sharma)
+>   (Developed by Tanav Sharma)
 
 ### 2.4.2 Application Breakdown
 
