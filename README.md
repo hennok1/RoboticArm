@@ -411,11 +411,11 @@ budget has increased slightly.
 
 -   Programming - 1 week
 
-###  
+ 
 
 ### Mechanical Assembly
 
--   STEP 1
+STEP 1
 
 The MeArm should be fun to build and easy to control. We’ve spent a lot of time
 putting together instructions for building and controlling the MeArm. We advise
@@ -423,7 +423,7 @@ that you work out and test how to control your Servo Motors before constructing
 your MeArm. It will save you time and frustration, and lessen the chance that
 your MeArm will just be something cool to sit on your shelf.
 
->   [media/image1.png](media/image1.png)
+![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/servo.png)
 
 >   [1 Servos](https://ladzone.github.io/blog/servo.py)
 
@@ -432,49 +432,57 @@ your MeArm will just be something cool to sit on your shelf.
 >   [All Four Motors controlling with
 >   keyboard](https://ladzone.github.io/blog/Test1.py)
 
--   STEP 2
+ 
 
->   Click on link and follow the steps
+STEP 2
 
->   [Link For Building Robot Arm
->   MeArm](http://www.instructables.com/id/Pocket-Sized-Robot-Arm-meArm-V04/?ALLSTEPS)
+Click on link and follow the steps
 
--   STEP 3
+[Link For Building Robot Arm
+MeArm](http://www.instructables.com/id/Pocket-Sized-Robot-Arm-meArm-V04/?ALLSTEPS)
 
->   **Using A Flex sensor and Servo On The Raspberry Pi Using An MCP3008**
+ 
 
->   **MCP3008**
+STEP 3
 
->   In order to measure the X and Y voltages I decided to use an MCP3008 10 bit
->   Analogue to Digital Converter. These devices are cheap, easy to setup and
->   allow 8 analogue inputs to be read by the Pi using it’s SPI interface. In
->   this tutorial we will only need three of its inputs. 
+**Using A Flex sensor and Servo On The Raspberry Pi Using An MCP3008**
 
->   VDD 3.3V
+**MCP3008**
 
->   VREF 3.3V
+In order to measure the X and Y voltages I decided to use an MCP3008 10 bit
+Analogue to Digital Converter. These devices are cheap, easy to setup and allow
+8 analogue inputs to be read by the Pi using its SPI interface. In this tutorial
+we will only need three of its inputs. 
 
->   AGND GROUND
+VDD 3.3V
 
->   CLK GPIO11 (P1-23)
+VREF 3.3V
 
->   DOUT GPIO9 (P1-21)
+AGND GROUND
 
->   DIN GPIO10 (P1-19)
+CLK GPIO11 (P1-23)
 
->   CS GPIO8 (P1-24)
+DOUT GPIO9 (P1-21)
 
->   DGND GROUND
+DIN GPIO10 (P1-19)
 
->   [media/image2.png](media/image2.png)
+CS GPIO8 (P1-24)
 
->   **Breadboard Circuit**
+DGND GROUND
 
->   Here is my test circuit
+![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/servo.png)
 
->   [media/image3.png](media/image3.png)
+ 
 
->   The MCP3008 is wired up just as it was in my previous post :
+**Breadboard Circuit**
+
+Here is my test circuit
+
+[media/image3.png](media/image3.png)
+
+ 
+
+The MCP3008 is wired up just as it was in my previous post :
 
 >   MCP3008           Pi                
 
@@ -502,7 +510,9 @@ your MeArm will just be something cool to sit on your shelf.
 
 >   Pin 16 (VDD) Pin 1 (3.3V)
 
->   **Python Test Script**
+ 
+
+**Python Test Script**
 
 >   \#!/usr/bin/env python
 
@@ -660,53 +670,58 @@ your MeArm will just be something cool to sit on your shelf.
 
 >   GPIO.cleanup()
 
->   [Download Test Program File](https://ladzone.github.io/blog/tune_led.py)
+[Download Test Program File](https://ladzone.github.io/blog/tune_led.py)
 
--   STEP 4
+ 
 
->   Making PCB for Flex Sensor
+STEP 4
 
->   [media/image4.png](media/image4.png)
+Making PCB for Flex Sensor
 
->   [Download Schematic File](https://ladzone.github.io/blog/mcp30008.sch)
+[media/image4.png](media/image4.png)
 
->   [media/image5.png](media/image5.png)
+[Download Schematic File](https://ladzone.github.io/blog/mcp30008.sch)
 
->   [Download Board File](https://ladzone.github.io/blog/mcp30008.sch)
+[media/image5.png](media/image5.png)
 
--   STEP 5
+[Download Board File](https://ladzone.github.io/blog/mcp30008.sch)
+
+ 
+
+STEP 5
 
 Adding Adafruit\_PWM\_Servo\_Driver to Raspberry Pi
 
->   [media/image6.jpeg](media/image6.jpeg)
+[media/image6.jpeg](media/image6.jpeg)
 
->      
->   
+[media/image7.jpeg](media/image7.jpeg)
 
->   [media/image7.jpeg](media/image7.jpeg)
+ 
 
->    
+Download Code File
 
->   Download Code File
+[Adafruit\_PWM\_Servo\_Driver\_libary](https://ladzone.github.io/blog/Adafruit_PWM_Servo_Driver.py)
 
->   [Adafruit\_PWM\_Servo\_Driver\_libary](https://ladzone.github.io/blog/Adafruit_PWM_Servo_Driver.py)
+[Running servo](https://ladzone.github.io/blog/Servo_Example.py)
 
->   [Running servo](https://ladzone.github.io/blog/Servo_Example.py)
+[Fully working Robots code](https://ladzone.github.io/blog/4motor.py)
 
->   [Fully working Robots code](https://ladzone.github.io/blog/4motor.py)
+ 
 
->   Testing
+### Testing
 
->   **This can then be run using :**
+**This can then be run using :**
 
->   sudo python (File name) .py
+sudo python (File name) .py
 
->   If everything has worked correctly you should see an output that looks
->   something like :
+If everything has worked correctly you should see an output that looks something
+like :
 
->   **Test 1**
+**Test 1**
 
->   [media/image8.jpeg](media/image8.jpeg)
+[media/image8.jpeg](media/image8.jpeg)
+
+ 
 
 **2.3 Project Breakdown**
 -------------------------
@@ -738,13 +753,13 @@ enters wrong credentials, it will advise the user “Wrong Credentials”
 **Logs**
 
 1.  This table is generated under the users account and is linked with use
-unique id.
+    unique id.
 
 2.  This table is generated when user launches the controller function in the
-app, and  is asked if they would like to start a log.
+    app, and is asked if they would like to start a log.
 
 3.  It creates the table with title of the current date and time on the system
-and stores the motors start and end coordinates for each of the four motor.
+    and stores the motors start and end coordinates for each of the four motor.
 
 4.  User will able to create multiple logs with in a day.
 
