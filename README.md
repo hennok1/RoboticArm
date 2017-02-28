@@ -719,7 +719,7 @@ like :
 
 **Test 1**
 
-![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/output.jpg)
+![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/output.jpeg)
 
  
 
