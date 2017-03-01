@@ -283,7 +283,7 @@ Table of Contents
 
 3.  [Conclusion]
 
-4.  [Bibliography](#5-bibliography)
+4.  [Appendix](#4-appendix)
 
 5.  Reference
 
@@ -723,16 +723,6 @@ like :
 
  
 
-### Is this project reproducible?
-
-Following the sets and using the code given on this github, I believe this
-project is reproducible and can work if all wiring and setups are done
-correctly. I would recommend anyone who is reproducing this project to buy test
-servo motors to make sure the wiring is correct because if connected incorrectly
-will burnout a motor.
-
- 
-
 **2.3 Project Breakdown**
 -------------------------
 
@@ -858,7 +848,7 @@ of the bend.
 
  
 
-**4. Bibliography**
+**4. Appendix**
 -------------------
 
  
