@@ -235,11 +235,11 @@ Table of Contents
 
 1.  [Introduction](#1-introduction)
 
-    [1.1 Technical Problem](#11-purpose)
+    [1.1 Technical Problem](#11-technical-problem)
 
-    [1.2 The Why](#12-scope)
+    [1.2 The Why](#12-the-why)
 
-    [1.3 Problem Encounter]
+    [1.3 Problem Encounter](#13-problem-encounter)
 
 2.  [Project Specifications](#2-software-requirements-specifications)
 
@@ -281,11 +281,11 @@ Table of Contents
 
     [2.4 Progress Reports](#24-progress-reports)
 
-3.  [Conclusion]
+3.  [Conclusion](#3-conclusion)
 
 4.  [Appendix](#4-appendix)
 
-5.  Reference
+5.  [Reference](#5-reference)
 
  
 
