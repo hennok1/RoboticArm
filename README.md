@@ -7,6 +7,7 @@ F.I.M.P. Project
 ================
 
 Project’s website: https://github.com/hennok129/RoboticArm
+
 Date of Submission: TBA
 
 Declaration of Joint Authorship
