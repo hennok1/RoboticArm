@@ -285,9 +285,9 @@ Table of Contents
 
 3.  [Conclusion](#3-conclusion)
 
-4.  [Appendix](#4-appendix)
+4.  [Reference](#4-reference)
 
-5.  [Reference](#5-reference)
+5.  [Appendix](#5-appendix)
 
  
 
@@ -850,10 +850,10 @@ of the bend.
 
  
 
-**4. Appendix**
+**4.  Reference**
 -------------------
 
  
 
-**5. Reference**
+**5. Appendix**
 ----------------
