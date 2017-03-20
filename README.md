@@ -847,7 +847,7 @@ of the bend.
 
 **3. Conclusion**
 -----------------
-
+This project was aimed to create a safer work environment for engineers and technicians, and to create a fun educational experience for the general public. We wanted to reduce the rate of work place injuries, and could not have thought of a better way. This F.I.M.P Arm has one main function, to give the user the ability to perform their job/task with ease and safely. The arm consists of four motors, which is connected to the 4 flex sensors in the glove. As the user flex’s their fingers, it sends the values from the sensor to the motors to mimic the motion. The arm can also be controlled via Android application, which connects to the arm via Bluetooth. The application controls the values with four sliding bars, the application allows the user to start a log and send the values of the motor to the database, which can be later viewed for report/diagnostic purposes. The final version of our project meets all the requirements that are needed to complete/rebuild this project.  
  
 
 **4.  Reference**
