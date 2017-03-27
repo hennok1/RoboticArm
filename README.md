@@ -1,6 +1,6 @@
 ---
 csl: apa.csl
-bibliography: SCDCitations.bib
+bibliography: RPiCitations.bib
 ---
 
 F.I.M.P. Project
@@ -8,9 +8,15 @@ F.I.M.P. Project
 
 Project’s website: https://github.com/hennok129/RoboticArm
 
-Date of Submission: TBA
+From: Hennok Tadesse, Alay Lad, and Tanav Sharma
 
-\pagebreak
+Discipline: Computer Engineering Technology
+
+Date: March 28, 2017
+
+ 
+
+\\pagebreak
 
 Declaration of Joint Authorship
 ===============================
@@ -28,6 +34,8 @@ three members equally and all project updates and changes have been checked and
 approved by all members.
 
  
+
+\\pagebreak
 
 Approved Proposal
 =================
@@ -249,52 +257,71 @@ Table of Contents
 
     [2.1 Project Description](#21-project-description)
 
-    [2.1.1 Product Perspective](#211-product-perspective)
+    -   [2.1.1 Mobile Application Concept](#211-product-perspective)
 
-    [2.1.2 System Interfaces](#212-system-interfaces)
+    -   [2.1.2 System Interfaces](#212-system-interfaces)
 
-    [2.1.3 User Interfaces](#213-user-interfaces)
+    -   [2.1.3 Application Screen](#213-user-interfaces)
 
-    [2.1.4 Hardware Interfaces](#214-hardware-interfaces)
+    -   [2.1.4 Hardware Interfaces](#214-hardware-interfaces)
 
-    [2.1.5 Software Interfaces](#215-software-interfaces)
+    -   [2.1.5 Software Interfaces](#215-software-interfaces)
 
-    [2.1.6 Communication Interfaces](#216-communication-interfaces)
+    -   [2.1.6 Communication Interfaces](#216-communication-interfaces)
 
     [2.2 Build Instructions](#22-build-instructions)
 
-    [2.2.1 Introduction](#221-introduction)
+    -   [2.2.1 Introduction](#221-introduction)
 
-    [2.2.2 Bill of Materials/Budget](#222-bill-of-materials/budget)
+    -   [2.2.2 Bill of Materials/Budget](#222-bill-of-materials/budget)
 
-    [2.2.3 Time Commitment](#223-time-commitment)
+    -   [2.2.3 Time Commitment](#223-time-commitment)
 
-    [2.2.4 Mechanical Assembly](#224-mechanical-assembly)
+    -   [2.2.4 Mechanical Assembly](#224-mechanical-assembly)
 
-    [2.2.5 Power Up](#225-power-up)
+    -   [2.2.5 Power Up](#225-power-up)
 
-    [2.2.6 Unit Testing](#226-unit-testing)
+    -   [2.2.6 Unit Testing](#226-unit-testing)
 
     [2.3 Specific Requirements](#23-specific-requirements)
 
-    [2.3.1 Database](#231-database)
+    -   [2.3.1 Database](#231-database)
 
-    [2.3.2 Application](#232-web-interface)
+    -   [2.3.2 Application](#232-web-interface)
 
-    [2.3.3 Hardware](#233-hardware)
+    -   [2.3.3 Hardware](#233-hardware)
 
     [2.4 Progress Reports](#24-progress-reports)
 
+    2.5 Problem Encountered
+
+    -   2.5.1 Hardware Problems
+
+    -   2.5.2 Software Problems
+
 3.  [Conclusion](#3-conclusion)
 
-4.  [Reference](#4-reference)
+4.  [Appendix](#4-reference)
 
-5.  [Appendix](#5-appendix)
+5.  [Reference](#5-appendix)
 
  
 
 **Illustrations or Diagrams**
 -----------------------------
+
+![](Doc/layout.png)
+
+-   This diagram shows the correct way of connecting the servo motor and the
+    flex sensor to the Raspberry Pi 3. Pin 2 is 5 V and pin 5 is ground to power
+    the servo motor. When connecting the flex sensor to ground, a 10k ohm
+    resistor is needed.
+
+![](Doc/mcp3008.png)
+
+-   This is the MCP3008 Analog to Digital converter which is used to convert the
+    analog signal from the flex sensor to a digital signal for the Raspberry Pi
+    3 to read. The MCP3008 can take up to 8 analog inputs at once.
 
  
 
@@ -337,15 +364,73 @@ but this issue was resolved by running a simple bash program.
 **2.1 Project Description**
 ---------------------------
 
-### 2.1.1 Product Perspective
+### 2.1.1 Mobile Application Concept
 
  
 
-### 2.1.2 System Interfaces
+### 2.1.2 Hardware Concept
 
  
 
-### 2.1.3 User Interfaces
+ 
+
+### 2.1.3 Application Screens
+
+### Login Screen:
+
+The login screen will present users with two edit text fields asking the user to
+enter a username and password. If the user doesn’t have an account, their is an
+option that will allow users to create an account and store it into a database.
+If a user enters an incorrect username and/or password, the mobile application
+will present an error message on the screen.
+
+ 
+
+### Register Screen:
+
+The register screen will display four edit text fields with the four fields
+being the users full name, the username, the password, and the confirmation for
+the passwords. Once the user finishes entering the four edit text fields, all
+the fields will be sent to a online database and will allow the user to login
+into the application. The password the user enters must be more than five
+characters long and the password and confirmation password must be the same. If
+there is an issue with registration process, their will be an error message on
+the screen and the entered fields will not be stored into the database.
+
+ 
+
+### Menu Screen:
+
+The menu screen will display the title of the project (F.I.M.P. Project) and two
+options for the user to chose from. One option is the controller screen which
+will allow the user to control the robotic arm using Bluetooth from the phone to
+the Raspberry Pi. The other option is user logs screen that display all the
+users that used the application to control the robotic arm. There is also a task
+bar on the top of the screen that have to option to logout of the application
+and will require the user to login again to use the application again.
+
+ 
+
+### Controller Screen:
+
+The controller screen is the main functionality of the mobile application that
+allows users to control the robotic arm through Bluetooth. The controller screen
+contains four sliding bars (seek bars) that will control the arm depending on
+the position of the sliding bar. Along with the sliding bars, it also contains a
+reset button to reset the position of the arm to its centered position and
+displaying the sliding bar values on the screen.
+
+###  
+
+### User Log Screen:
+
+The user log screen contains all the time that users have entered the controller
+screen to control the robotic arm with the time, day, and username. Once a user
+enters the controller screen, the mobile application will store the time and day
+the user entered the controller screen; along with the username of the user. The
+user logs will be displayed in a list in an organized way and will be able to
+track who and when a user is using the robotic arm and have it be saved all onto
+a database.
 
  
 
@@ -427,7 +512,7 @@ that you work out and test how to control your Servo Motors before constructing
 your MeArm. It will save you time and frustration, and lessen the chance that
 your MeArm will just be something cool to sit on your shelf.
 
-![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/servo.png)
+![](Doc/servo.png)
 
 >   [1 Servos](https://ladzone.github.io/blog/servo.py)
 
@@ -441,9 +526,6 @@ your MeArm will just be something cool to sit on your shelf.
 **STEP 2**
 
 Click on link and follow the steps
-
-[Link For Building Robot Arm
-MeArm](http://www.instructables.com/id/Pocket-Sized-Robot-Arm-meArm-V04/?ALLSTEPS)
 
  
 
@@ -474,17 +556,15 @@ CS GPIO8 (P1-24)
 
 DGND GROUND
 
-![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/mcp3008.png)
+![](Doc/mcp3008.png)
 
  
 
 *Breadboard Circuit*
 
-Here is my test circuit
+Here is the test circuit:
 
-![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/layout.png)
-
- 
+![](Doc/layout.png)
 
 The MCP3008 is wired up just as it was in my previous post :
 
@@ -674,41 +754,32 @@ The MCP3008 is wired up just as it was in my previous post :
 
 >   GPIO.cleanup()
 
-[Download Test Program File](https://ladzone.github.io/blog/tune_led.py)
-
  
 
 **STEP 4**
 
-Making PCB for Flex Sensor
+Making PCB for Flex Sensor:
 
-![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/pcb.PNG)
+This is the schematic for the PCB that will contant the MCP3008 chip and the
+flex sensors to be connected.
 
-[Download Schematic File](https://ladzone.github.io/blog/mcp30008.sch)
+![](Doc/pcb.PNG)
 
-![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/PCBB.PNG)
+This is the board which was created using the Eagle program.
 
-[Download Board File](https://ladzone.github.io/blog/mcp30008.sch)
+![](Doc/PCBB.PNG)
+
+ 
 
  
 
 **STEP 5**
 
-Adding Adafruit\_PWM\_Servo\_Driver to Raspberry Pi
+Adding Adafruit\_PWM\_Servo\_Driver to Raspberry Pi 3:
 
-![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/driver.jpg)
+![](Doc/driver.jpg)
 
-![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/driver1.jpg)
-
- 
-
-Download Code File
-
-[Adafruit\_PWM\_Servo\_Driver\_libary](https://ladzone.github.io/blog/Adafruit_PWM_Servo_Driver.py)
-
-[Running servo](https://ladzone.github.io/blog/Servo_Example.py)
-
-[Fully working Robots code](https://ladzone.github.io/blog/4motor.py)
+![](Doc/driver1.jpg)
 
  
 
@@ -723,7 +794,7 @@ like :
 
 **Test 1**
 
-![Error](https://github.com/hennok129/RoboticArm/blob/master/Doc/output.jpeg)
+![](Doc/output.jpeg)
 
  
 
@@ -783,11 +854,11 @@ the user when launching the app.
 
 ### 2.3.2 Application
 
-The overall concept of the mobile application for the project is to control the four
-servo motors of the robotic arm and keep logs on the user’s actions. The first
-screen of the application will be the login screen which will require an email and
-password to create and login to an account. The accounts are used to hold
-individual logs of the user’s controller usage. When logged in, the user is
+The overall concept of the mobile application for the project is to control the
+four servo motors of the robotic arm and keep logs on the user’s actions. The
+first screen of the application will be the login screen which will require an
+email and password to create and login to an account. The accounts are used to
+hold individual logs of the user’s controller usage. When logged in, the user is
 presented with two option; controller and user logs.
 
 The first option of the application is to control the motor with four sliders
@@ -842,20 +913,294 @@ of the bend.
 
 (Developed by Alay Lad)
 
+ 
+
 **2.4 Progress Reports**
 ------------------------
+
+### Progress report sent on January 31, 2017:
+
+Dear Kristian Medri,
+
+The current progress for the F.I.M.P. (robotic arm) project has been following
+the schedule shown in the proposal and gannet chart. The overall budget has
+stated the same other than buying a 650 μf and a golf glove that Alay had
+already owned.
+
+For the hardware, we have made progress on moving the all servo motors on the
+robotic arm with a flex sensor and was able to solder one of the flex sensor to
+a custom made PCB created by Alay. This will allow us to put the flex sensors
+into a glove. For testing this flex sensor, we are using a golf glove with the
+sensor on one finger to move on of the motors. We are current working on
+creating a smaller PCB that will placed on top of the raspberry pi on the Eagle
+application. Along with the PCB, are also creating a case for the raspberry pi
+that will fit the raspberry pi, DAC custom made PCB, and Adafruit 16-Channel
+PWM.
+
+For the android phone application, we are keeping the app we created from last
+semester but are changing the overall design of the controller. The design of
+the controller is going to be 4 sliders that will control all the servo motors
+for the robotic arm. We created the designs for the app and are ready to
+implement the designs on android studio.
+
+For the database, we are still undecided on which database to use. Firebase was
+the originally the database we used for the android app but we are not sure if
+it will be suitable for this semester. Tanav suggested that our group use Google
+Cloud for the projects database. Once we have decided on the current database we
+can start creating tables and integrating it to the android app.
+
+In conclusion, we are on track to completing the project on its required time
+and will continue to update the github website with test code, design documents,
+and other project information. The link to the github
+is <https://github.com/hennok129/RoboticArm>.
+
+ 
+
+Sincerely,
+
+Hennok Tadesse
+
+###  
+
+### Independent progress report sent on February 16, 2017:
+
+Dear Kristian Medri,
+
+My current progress for the F.I.M.P project has been on track with the schedule
+shown in the proposal and Gant chart. The overall budget has stayed the same
+with no changes from the last progress report. My main contribution with the
+project has been the back-end development of the application and assisting
+Hennok with the overall design of the app.
+
+I originally decided to use Firebase Database as our online database platform. I
+ran into many problems as Firebase does not grant its user full access to its
+back-end system and is restricted in terms of usability and flexibility. The
+database that we have now decided to go for, is the Amazon Web Service
+RDS(Rational Database). This way I will have full access to the back-end, and it
+gives us more flexibility as I can create my own SQL statements to suit my needs
+and the application.
+
+The application that will be used to control the hardware, needs a lot of
+redesigning. I have designed and will be implementing a login, register screen
+and a log recorder feature. The log recorder feature will be able to store the
+logs of the run, into a table. These tables can later be used for analysis,
+report making, and/or re-running the tests. To make a more user friendly
+interface, I have also designed and implemented a navigation drawer. This will
+allow the user to access the different features offered by the app, that will be
+getting updated regularly.
+
+Overall my contribution to the group has been well, and works towards a
+successful completion of the project. Me and my team will continue to update the
+github website with test code, design documents, and other project information.
+The link to the github is <https://github.com/hennok129/RoboticArm>.
+
+ 
+
+Sincerely,
+
+Tanav Sharma
+
+ 
+
+### Continuation of the independent progress report sent on February 19, 2017:
+
+Dear Kristian Medri,
+
+This progress report is an continuation to the original independent progress
+report sent to you by Tanav on February 19, 2017. The continuation will discuss
+the independent progress that Alay and I have done. 
+
+My contribution to the project is to design and create the mobile application
+that controls the robotic arm. I have created and completed the design of the
+controller for the robotic arm which uses four sliding bars (seek bars) that
+will control the arm depending on the position of the sliding bar. Along with
+the sliding bars, I have included a reset button to reset the position of the
+arm to its centered position and displaying the sliding bar values on the
+screen. The work that needs to be done for the software portion is to figure out
+a way to control the arm with mobile application and will be working with Alay
+on moving it with Bluetooth or WIFI.
+
+Alay’s contribution to the project is to assemble and work with the hardware for
+the project by creating a PCB for the flex sensors and designing the glove to
+move the robotic arm. Alay has created a new PCB that is connected to the flex
+sensors. Alay had trouble with the PCB he created last week due to a capacitor
+on the Raspberry Pi being in the way. Alay had also created a base plate for the
+robotic arm to avoid the arm from falling over. The progress that needs to be
+done for the hardware is to solder the flex sensors to the PCB and create the
+glove for the flex sensors.
+
+In conclusion, we are reaching the completion of our hardware portion of the
+project and are working on the communication between the mobile application and
+the robotic arm. Test code, design documents, and other project information will
+be available at this github:
+
+<https://github.com/hennok129/RoboticArm>.
+
+ 
+
+Sincerely,
+
+Hennok Tadesse
+
+###  
+
+### Integration progress report sent on March 7, 2017:
+
+Dear Dr. Kristian Medri,
+
+This progress report will discuss the project collaboration that I, Hennok, and
+Tanav have done. The integration is between the MeArm robotic arm, mobile
+application, and the online database.  
+
+My contribution to the project is to assemble and work with the hardware for the
+project by creating PCBs for the flex sensors. I am still working on designing
+the glove to move the robotic arm. The flex sensor PCBs has been completed.  I
+am also creating a base plate for the robotic arm for weight and balance to
+prevent the arm from falling over during use. The base plate approximate cost is
+around \$20. On that note, we have bought ribbon cable, which has cost \$3, and
+the Bluetooth adapter, which has cost \$15. There is currently no integration
+between the mobile application and hardware yet, but we are figuring out a way
+to control the arm with the mobile application using Bluetooth.
+
+Hennok’s contribution to the project is to design the mobile application that
+controls the robotic arm. He also created and completed the design of the
+controller for the robotic arm which uses four sliding bars (seek bars) that
+will control the arm depending on the position of the sliding bar. Along with
+the sliding bars, I have included a reset button to reset the position of the
+arm to its centered position and which displays the sliding bar values on the
+screen. Hennok worked with Tanav to integrate the online database that Tanav had
+made to add a login and register screen, and user logs.
+
+Tanav’s contribution to the project is to create a database and connect it with
+the mobile application. He has completed making the database using Amazon Web
+Service RDS (Rational Database) and he was also able to connect to the database
+with the mobile application. Currently, he is going to work with me on
+connecting the robotic arm using Bluetooth to the mobile application and the
+Raspberry Pi.
+
+In conclusion, we are close to completion of our hardware portion of the project
+and we are working on the integration between the mobile application and the
+robotic arm. The test code, design documents, and other project information will
+be available at this GitHub:<https://github.com/hennok129/RoboticArm>.
+
+ 
+
+Sincerely,
+
+Alay Lad
+
+ 
+
+### Troubleshooting status report sent on March 21, 2017:
+
+Dear Kristian Medri,
+
+This progress report will go over the status of troubleshooting the overall
+project and issues we have come across since the last progress report. The
+budget has not changed from the last progress report and we are currently on
+schedule to completing the project on time.
+
+We were having a lot of our problems with moving the robotic arm with the flex
+sensors; once Alay had finished creating the PCB for the sensors. The issue we
+had was that the program on the Raspberry Pi 3 was able to get the value on the
+sensor but the robotic arm was not able to read the values; therefore, we were
+having issues moving the robotic arm. We fixed this issue by checking if all the
+components on the PCB was working, and found out that the MCP3008 (Analogue to
+Digital Converter) was not being powered. Once we powered the integrated
+circuit, the robotic arm was working with all motors moving based on the flex
+sensors values.
+
+We also had some issues with the mobile application and database with sending
+data to the database more than one time. The issue was sending the start and end
+points of the controller to the database to see if it could control the servos
+on the robotic arm. Tanav has come up with a solution to this problem by using
+JAVA threads with the mobile application to send data more than once to the
+database.
+
+Overall, the main focus for the project, at the moment, is to get the mobile
+application and robotic arm to communicate with each other and to complete the
+technical report. The link to the github
+is <https://github.com/hennok129/RoboticArm>.
+
+ 
+
+Sincerely,
+
+Hennok Tadesse
+
+ 
+
+**2.5 Problems Encountered**
+----------------------------
+
+### Hardware Problems:
+
+During the creation of the robotic arm, our group tested the micro servo motors
+to see how the servo motors move and the limits of the motors. When powering one
+of the servo motor, our group had put too much Amps (current) to the motor which
+caused the servo motor to burn out. This was an issue that all the group members
+have had which caused each group member to burn one or more servo motors. The
+solution to this problem was to always note how many Amps are being put into the
+servo motors (A safe amount of Voltage and Amps to put into all four servo
+motors is 5 V and 2 A).
+
+When using the flex sensors to control the robotic arm, their were some issues
+with reading values consistently. At times, it felt as if the robotic arm would
+read values one time then not read values another time. The problem was with the
+PCB that was created to connect the flex sensors to the MCP3008 (Analogue to
+Digital Converter) IC. When soldering the PCB, we were not very careful with
+making sure every component was soldered well and the IC was not being powered
+leading to the readings of the flex sensor to be incorrect. The solution was to
+make sure the IC was soldered correctly and was powering up correctly.
+
+ 
+
+### Software Problems:
+
+During the ingratiation of the mobile application and database, their were some
+issues with  sending data to the database multiple times. The issue was noticed
+when trying to make two user accounts on the mobile application and when making
+one account, the mobile application will create and store the information into a
+database; But when making another account, the application will crash and must
+re-launch the application to create the second account. To correct this issue,
+our group had made JAVA threads to send multiple data to the database. This
+fixed issues with creating multiple users and recording the user logs to store
+data multiple times.
+
+Another mobile application issue our team had come across was the connection
+between the mobile application and the robotic arm. Our original plan was to
+connect the Raspberry Pi 3 to the online database and to have the mobile
+application send start and end points of the seek bars position and move the
+robotic arm depending on the position. As the project came along, we realized
+that it would be very difficult to do so and would cause a lot of unneeded data
+on the database. Our solution to the issue was to control the arm using the
+Bluetooth on the Raspberry Pi 3 and the mobile device’s Bluetooth.
 
  
 
 **3. Conclusion**
 -----------------
-This project was aimed to create a safer work environment for engineers and technicians, and to create a fun educational experience for the general public. We wanted to reduce the rate of work place injuries, and could not have thought of a better way. This F.I.M.P Arm has one main function, to give the user the ability to perform their job/task with ease and safely. The arm consists of four motors, which is connected to the 4 flex sensors in the glove. As the user flex’s their fingers, it sends the values from the sensor to the motors to mimic the motion. The arm can also be controlled via Android application, which connects to the arm via Bluetooth. The application controls the values with four sliding bars, the application allows the user to start a log and send the values of the motor to the database, which can be later viewed for report/diagnostic purposes. The final version of our project meets all the requirements that are needed to complete/rebuild this project.  
+
+This project was aimed to create a safer work environment for engineers and
+technicians, and to create a fun educational experience for the general public.
+We wanted to reduce the rate of work place injuries, and could not have thought
+of a better way. This F.I.M.P Arm has one main function, to give the user the
+ability to perform their job/task with ease and safely. The arm consists of four
+motors, which is connected to the 4 flex sensors in the glove. As the user
+flex’s their fingers, it sends the values from the sensor to the motors to mimic
+the motion. The arm can also be controlled via Android application, which
+connects to the arm via Bluetooth. The application controls the values with four
+sliding bars, the application allows the user to start a log and send the values
+of the motor to the database, which can be later viewed for report/diagnostic
+purposes. The final version of our project meets all the requirements that are
+needed to complete/rebuild this project.  
  
 
-**4.  Reference**
--------------------
+**4. Appendix**
+---------------
 
  
+-
 
-**5. Appendix**
+**5. Reference**
 ----------------
