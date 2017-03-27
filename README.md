@@ -10,7 +10,7 @@ Project’s website: https://github.com/hennok129/RoboticArm
 
 Date of Submission: TBA
 
-/pagebreak
+\pagebreak
 
 Declaration of Joint Authorship
 ===============================
