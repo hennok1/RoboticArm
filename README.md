@@ -1,6 +1,6 @@
 ---
-csl: apa.csl
 bibliography: RPiCitations.bib
+csl: apa.csl
 ---
 
 F.I.M.P. Project
@@ -85,13 +85,13 @@ insight into similar efforts.
 
 The first article is about a continuous-time decentralized neural control scheme
 for trajectory tracking of a two degrees of freedom direct drive vertical
-robotic arm. (\@7762884)
+robotic arm.[@7762884]
 
 The second article is about the Gesture Controlled Robot (GCR) which is a robot
-that can be moved according to our hand movements. (\@7583873)
+that can be moved according to our hand movements. [@7583873]
 
 The third article is about the instantaneous current profile tracking control
-for minimizing torque ripple of switched reluctance motors. (\@6527176)
+for minimizing torque ripple of switched reluctance motors.[@6527176]
 
 In the Computer Engineering Technology program we have learned about the
 following topics from the respective relevant courses:
@@ -1096,13 +1096,11 @@ Making PCB for Flex Sensor:
 This is the schematic for the PCB that will contant the MCP3008 chip and the
 flex sensors to be connected.
 
-![](Doc/pcb.PNG)
+![](pcbS.PNG)
 
 This is the board which was created using the Eagle program.
 
-![](Doc/PCBB.PNG)
-
- 
+![](pcbL.PNG)
 
  
 
@@ -2080,7 +2078,7 @@ int main() {                             // must be run as root
 }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
- 
+\pagebreak
 
 **5. Reference**
 ----------------
