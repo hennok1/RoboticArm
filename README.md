@@ -1,6 +1,6 @@
 ---
-bibliography: RPiCitations.bib
 csl: apa.csl
+bibliography: RPiCitations.bib
 ---
 
 F.I.M.P. Project
@@ -325,32 +325,44 @@ Table of Contents
 We have innovated technology to great measures and even till this day, inventors
 and innovators continue to improve our lives with technology. Jobs titles such
 as an Aircraft Engineer or a Power Line Technician put their lives at risk, by
-working up-close dangerous moving parts and high amounts of voltage. Due to
+working up-close to dangerous moving parts and high amounts of voltage. Due to
 these dangers, employees are getting injured at the workplace. With the help of
-Robotic Arm, we aim to prevent these injuries from happening while providing the
-same amount of work performance. This project was undertaken due to many
-reasons; to improve work performance and safety at workplaces, allow students to
-use and modify our Robotic Arm and code for educational purposes, create a fun,
-entertaining environment for users, and simply because we are inventors.
+the Robotic Arm, we aim to prevent these injuries from happening while providing
+the same amount of work performance and accuracy. With the help of our glove and
+also providing the user to use our arm with the flexibility of our application
+feature, the users can now perform their roles from a safer distance.
 
-This project was a very fun and educational experience, we as a team learned a
-lot about our strengths and worked together to help each other out through our
-weaknesses. While working on this project, we encountered many problems and
-obstacles; burning out motors because we applied to much current, we had to re
-print some acrylic parts for the Robotic Arm, as some parts broke while
-assembling the arm, and also, we had to make some modification to base to fit
-the weighted base plate. We ran into problems with connecting the Raspberry Pi 3
-to an enterprise wireless network, but this issue was resolved, by running a
-simple bash script. Some other problems we ran into were, connecting to the
-online database and sending the motor values simultaneously. This issue was
-resolved by using threads which allowed the app to execute the tasks more than
-once, rather only one time.
+This project was undertaken due to many reasons; to improve work performance and
+safety at workplaces, allow students to use and modify our Robotic Arm and code
+for educational purposes, create a fun, entertaining environment for users, and
+simply because we are inventors and like to invent. This project was a very fun
+and educational experience, we as a team learned a lot about our strengths and
+worked together to help each other out through our weaknesses. While working on
+this project, we encountered many problems and obstacles; burning out motors
+because we applied to much current, we had to re print some acrylic parts for
+the Robotic Arm, as some parts broke while assembling the arm, and also, we had
+to make some modification to base to fit the weighted base plate. We ran into
+problems with connecting the Raspberry Pi 3 to an enterprise wireless network,
+but this issue was resolved, by running a simple bash script. Some other
+problems we ran into were, connecting to the online database and sending the
+motor values simultaneously. This issue was resolved by using threads which
+allowed the app to execute the tasks more than once, rather only one time. Not
+only did these obstacles expand our knowledge, but it also helped us understand
+the importance of time management, communication and asking for help when
+needed. We would like to thank Dr. Kristian Medri, as his feedback and advice
+was very valuable to the success of our project, and his words definitely would
+guide us in the right direction when we came across a dead end. We would also
+like to thank Vlad and Prof. Kelly from the prototype lab, for their constant
+assistance and advice on our project. It definitely gave us new ideas and helped
+us in approaching our project in better, newer ways.
 
 In conclusion, this project was great learning experience for us. We understood
-the importance of team work and communication. This project aimed to achieve a
-fun, education, workplace space environment, and we believe we have successfully
-achieved that goal. Of course, we had some hurdles, but as team we overcame
-those hurdles and was a great learning experience.
+the importance of team work and communication. This project was aimed to provide
+a fun, educational, workplace space environment, and we believe we have
+successfully achieved that goal.  We aim to keep on innovating and making this
+project better as we learn more about motor controls, and sensor sensing. Of
+course, we ran into problems, but as team we overcame those hurdles and was a
+great learning experience.
 
 \pagebreak
 
@@ -1134,52 +1146,193 @@ like :
 
 ### 2.3.1 Database
 
-There will be a Amazon Database; a service provided by Amazon. When creating an
-account with Amazone Web Server, I need to create a php file for the register
-activity. I also need to create one file for the login activity. To connect the
-app to the database, I created a "init.php" file. This file is in charge for
-establishing connection to the database. All of these files are in-charge of the
-backend process of the database. This database will be responsible for holding
-user account information, for example user credentials for the login/register
-function. This database will also contain many tables under the user account as
-the user will able to create multiple logs with in a day and each log will be
-stored in its own table. The breakdown of the fields is stated below.
+For the database, we will be using a Rational Database on an Amazon Web Server;
+this service is provided by Amazon. On this server, I have created multiple PHP
+files, that are responsible for establishing the connection with the database,
+registering the user, logging in the user, and one for creating the user logs.
+These files are in charge of the backend process and functionality of the
+database. This database is responsible for holding two tables; user accounts and
+user logs.
 
-**User Account**
+User Account
 
-1.  This table is generated when the user registers
+1.	This table holds the information of the users who registers.
 
-2.  It holds the users first name, last name, username as well as the password.
+2.	This table is accessed when the user either registers or logs in.
 
-When registering, if an username already exists on the database, it
+3.	It holds a User ID which is auto incremented every time a user registers,
+first name of the user, last name of the user, the username and their password.
 
-will advise the user that “User already exists”. When logging in, if the user
-enters wrong credentials, it will advise the user “Wrong Credentials”
+ 
 
-**Logs**
+When the user registers and the credentials already exist on the server, the
+server will return an error, notifying the user that the user already exists”.
+If the user tries to login with the wrong credentials and it does not match the
+information on the server, it will notify the use that they have entered the
+wrong credentials.
 
-1.  This table is generated under the users account and is linked with use
-    unique id.
+User Logs
 
-2.  This table is generated when user launches the controller function in the
-    app, and is asked if they would like to start a log.
+1.	This table is generated when the user launches the controller function on the
+application.
 
-3.  It creates the table with title of the current date and time on the system
-    and stores the motors start and end coordinates for each of the four motor.
+2.	It creates a table, that holds the start and end values of each motor, and the
+User ID of the user logged in. The data in this table is linked with the users
+in the first table with User ID’s. User may create as many logs within a day.
 
-4.  User will able to create multiple logs with in a day.
+The purpose of the database is to mainly allow the user to create a personal
+account, and to allow them to store all their logs while using the arm. Creating
+a table and linking it to their Unique ID allows the user to know, which logs
+are being accessed when they want to review their tests. These logs can only be
+used for research and development reasons only, which will be stated in the
+Terms and Condition document provided with the product and also displayed to the
+user when launching the application.
 
-The purpose of the database is mainly to allow the user to create a personal
-account, and to allow other users to access logs from other users. Creating a
-table with the date and time, under the user’s unique id, will inform others
-whose logs are being accessed from which date and time. The administrator may
-choose to restrict certain logs to certain user and/or departments.
+ 
 
-These logs can be used for research/development reasons only, which is stated in
-the Terms and Condition document provided with the product and also displayed to
-the user when launching the app.
+Below is the code for my PHP files:
 
-(Developed by Tanav Sharma)
+“Init.php”
+
+\<?php
+
+	\$db\_name = "/provide you database name";
+
+	\$mysql\_user = "/provide your database username";
+
+	\$mysql\_pass = "/provide your database password";
+
+	\$server\_name= "/provide your database link";
+
+ 
+
+	\$con = mysqli\_connect(\$server\_name,\$mysql\_user,\$mysql\_pass,\$db\_name);
+
+ 
+
+	if(!\$con){
+
+		//echo "Connection Error..".mysqli\_connect\_error();
+
+	}else{
+
+		//echo "\<H3\>Success\</H3\>";
+
+	}
+
+?\>
+
+ 
+
+“register.php”
+
+\<?php
+
+	
+
+	//calling the file, to initate the connection
+
+	require "init.php";
+
+	
+
+	\$fname = \$\_POST["fname"];
+
+	\$lname = \$\_POST["lname"];
+
+	\$user\_name = \$\_POST["username"];
+
+	\$user\_pass = \$\_POST["password"];
+
+	
+
+ 
+
+	\$sql\_query = "INSERT INTO users (fname, lname, username, password) values
+('\$fname','\$lname','\$user\_name','\$user\_pass');";
+
+	
+
+	if(mysqli\_query(\$con,\$sql\_query)){
+
+		//echo "values inserted";
+
+	}else{
+
+		//echo "error inserting values";
+
+	}
+
+ 
+
+?\>
+
+ 
+
+“Createlogs.php”
+
+\<?php
+
+	
+
+	//calling the file, to initate the connection
+
+	require "init.php";
+
+	
+
+	
+
+	\$clawStart = \$\_POST["clawStart"];
+
+	\$clawStop = \$\_POST["clawStop"];
+
+ 
+
+	\$baseStart = \$\_POST["baseStart"];
+
+	\$baseStop = \$\_POST["baseStop"];
+
+ 
+
+	\$elbowStart = \$\_POST["elbowStart"];
+
+	\$elbowStop = \$\_POST["elbowStop"];
+
+ 
+
+ 
+
+	\$shoulderStart = \$\_POST["shoulderStart"];
+
+	\$shoulderStop = \$\_POST["shoulderStop"];
+
+ 
+
+ 
+
+	\$sql\_log\_query = "INSERT into
+logs(clawStart,clawStop,baseStart,baseStop,elbowStart,elbowStop,shoulderStart,shoulderStop)values(\$clawStart,\$clawStop,\$baseStart,\$baseStop,\$elbowStart,\$elbowStop,\$shoulderStart,\$shoulderStop)";
+
+ 
+
+	if(mysqli\_query(\$con,\$sql\_log\_query)){
+
+		//echo "data write success";
+
+	}else{
+
+		echo "\$sql\_log\_query";
+
+		//echo "data write un-success";
+
+	}
+
+?\>
+
+ 
+
+(Developed By Tanav Sharma)
 
  
 
