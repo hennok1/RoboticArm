@@ -3,7 +3,7 @@ csl: apa.csl
 bibliography: RPiCitations.bib
 ---
 
-F.I.M.P. Project
+Robotic Arm Project
 ================
 
 Project’s website: https://github.com/hennok129/RoboticArm
@@ -21,7 +21,7 @@ Date: March 28, 2017
 Declaration of Joint Authorship
 ===============================
 
-The F.I.M.P. robotic arm project consist of three group members (Hennok Tadesse,
+The F.I.M.P.(Fully Innovative Mirco Processor) robotic arm project consist of three group members (Hennok Tadesse,
 Tanav Sharma, and Alay Lad) and is a joint effort on the completion of the
 project. The work for the project has been divided equally among the group
 members. Alay Lad has worked on the hardware aspect of the project; which
